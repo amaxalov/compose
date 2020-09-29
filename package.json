@@ -1,0 +1,32 @@
+{
+  "name": "simply-composer",
+  "version": "1.0.1",
+  "type": "module",
+  "description": "simply function to compose methods",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "npx babel src --out-dir dist",
+    "start": "npx babel src --watch --out-dir dist",
+    "clean": "rm -rf dist",
+    "prebuildpackage": "npm run clean && npm run build",
+    "buildpackage": "npm pack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amaxalov/compose.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "compose"
+  ],
+  "author": "Alexander Makhalov <aleksandr.maxalov@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "jest": "26.4.2"
+  }
+}
